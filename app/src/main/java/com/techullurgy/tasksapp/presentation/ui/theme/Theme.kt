@@ -1,4 +1,4 @@
-package com.techullurgy.tasksapp.ui.theme
+package com.techullurgy.tasksapp.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build

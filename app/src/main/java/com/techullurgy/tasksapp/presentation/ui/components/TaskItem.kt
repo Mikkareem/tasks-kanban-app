@@ -1,4 +1,4 @@
-package com.techullurgy.tasksapp.ui
+package com.techullurgy.tasksapp.presentation.ui.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -23,7 +23,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.techullurgy.tasksapp.domain.model.KanbanStatusType
 import com.techullurgy.tasksapp.domain.model.Task
-import com.techullurgy.tasksapp.ui.theme.TasksAppTheme
+import com.techullurgy.tasksapp.presentation.ui.theme.TasksAppTheme
 
 @Composable
 fun TaskItem(
@@ -48,23 +48,6 @@ fun TaskItem(
                 Text(text = "Created ${task.createdOn}", fontSize = 12.sp, color = LocalContentColor.current.copy(alpha = 0.5f))
             }
         }
-    }
-}
-
-@Composable
-fun SmallChip(
-    value: String,
-    color: Color,
-    modifier: Modifier = Modifier
-) {
-    Box(
-        modifier = modifier
-            .drawBehind {
-                drawRoundRect(color, cornerRadius = CornerRadius(80f))
-            }
-            .padding(horizontal = 8.dp)
-    ) {
-        Text(text = value, color = Color.White, fontWeight = FontWeight.Medium)
     }
 }
 

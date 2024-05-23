@@ -1,4 +1,4 @@
-package com.techullurgy.tasksapp.ui.theme
+package com.techullurgy.tasksapp.presentation.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

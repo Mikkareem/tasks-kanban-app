@@ -1,4 +1,4 @@
-package com.techullurgy.tasksapp.ui.layout
+package com.techullurgy.tasksapp.presentation.ui.layout
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
@@ -29,7 +29,7 @@ import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.round
 import com.techullurgy.tasksapp.domain.model.KanbanStatusType
-import com.techullurgy.tasksapp.ui.layout.core.rememberKanbanBoardState
+import com.techullurgy.tasksapp.presentation.ui.layout.core.rememberKanbanBoardState
 
 /** KanbanBoard is the board which shows Kanban Board UI in horizontal fashion where each page shows elements whose group consists of.
  *

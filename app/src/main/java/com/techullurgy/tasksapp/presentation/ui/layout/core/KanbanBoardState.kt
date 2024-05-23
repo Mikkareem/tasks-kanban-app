@@ -1,4 +1,4 @@
-package com.techullurgy.tasksapp.ui.layout.core
+package com.techullurgy.tasksapp.presentation.ui.layout.core
 
 import android.graphics.Bitmap
 import android.graphics.Picture
