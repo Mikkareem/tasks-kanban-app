@@ -4,9 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.techullurgy.tasksapp.presentation.ui.screens.KanbanScreen
+import com.techullurgy.tasksapp.presentation.navigation.AppNavigation
 import com.techullurgy.tasksapp.presentation.ui.theme.TasksAppTheme
-import com.techullurgy.tasksapp.presentation.viewmodels.KanbanBoardViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,8 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TasksAppTheme {
-                val viewModel = KanbanBoardViewModel()
-                KanbanScreen(viewModel = viewModel)
+                AppNavigation()
             }
         }
     }
