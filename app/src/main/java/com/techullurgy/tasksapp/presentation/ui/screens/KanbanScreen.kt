@@ -34,7 +34,7 @@ fun KanbanScreen(
     ) {
         KanbanBoard(
             groups = groups,
-            onDragDrop = { _, _, _ -> }
+            onDragDrop = viewModel::onDragDrop
         ) {
             TaskItem(task = it)
         }
