@@ -1,7 +1,6 @@
 package com.techullurgy.tasksapp.presentation.ui.screens
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -12,12 +11,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.sharp.List
-import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -34,6 +29,7 @@ import com.techullurgy.tasksapp.domain.model.KanbanStatusType
 import com.techullurgy.tasksapp.domain.model.Task
 import com.techullurgy.tasksapp.presentation.navigation.LocalNavHostController
 import com.techullurgy.tasksapp.presentation.navigation.Screen
+import com.techullurgy.tasksapp.presentation.ui.components.KanbanIcon
 import com.techullurgy.tasksapp.presentation.ui.components.TaskItem
 import com.techullurgy.tasksapp.presentation.ui.layout.AppScaffold
 import com.techullurgy.tasksapp.presentation.ui.theme.TasksAppTheme
@@ -86,15 +82,9 @@ private fun MyTasksScreen(
                     fontWeight = FontWeight.ExtraBold
                 )
 
-                Icon(
-                    imageVector = Icons.AutoMirrored.Sharp.List,
-                    contentDescription = null,
-                    modifier = Modifier
-                        .size(36.dp)
-                        .clickable {
-                            navController.navigate(Screen.Kanban.name)
-                        }
-                )
+                KanbanIcon {
+                    navController.navigate(Screen.Kanban.name)
+                }
             }
             Spacer(modifier = Modifier.height(16.dp))
             LazyColumn(
