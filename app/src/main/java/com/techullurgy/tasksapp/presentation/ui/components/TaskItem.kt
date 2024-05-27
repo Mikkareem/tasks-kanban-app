@@ -32,7 +32,8 @@ fun TaskItem(
     Card(
         modifier = modifier,
         colors = CardDefaults.cardColors(
-            containerColor = Color.White
+            containerColor = Color(0xFF743089),
+            contentColor = Color.White
         )
     ) {
         Column(
@@ -76,7 +77,7 @@ private fun TaskItemPreview() {
                 title = "Cooking food",
                 description = "Start cooking food at 10 AM Sharp",
                 createdOn = "2 days ago",
-                kanbanStatus = KanbanStatusType("WIP")
+                kanbanStatus = KanbanStatusType("Completed")
             )
         )
     }

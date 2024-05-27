@@ -2,6 +2,7 @@ package com.techullurgy.tasksapp.presentation.ui.components
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -28,7 +29,12 @@ fun SmallChip(
             }
             .padding(horizontal = 8.dp, vertical = 1.dp)
     ) {
-        Text(text = value, color = color.content, fontWeight = FontWeight.SemiBold)
+        Text(
+            text = value,
+            color = color.content,
+            fontWeight = FontWeight.SemiBold,
+            style = MaterialTheme.typography.bodySmall
+        )
     }
 }
 
